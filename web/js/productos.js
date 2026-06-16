@@ -1,4 +1,4 @@
-const productos = [
+globalThis.productos = [
   {
     nombre: 'Lasaña casera',
     categoria: 'Pasta',

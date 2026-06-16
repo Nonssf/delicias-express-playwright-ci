@@ -1,13 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Delicias Express | Comida preparada</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body data-pagina="inicio">
   <header class="site-header">
@@ -16,7 +16,7 @@
         <span class="marca-icono">🍲</span>
         <span>Delicias Express</span>
       </a>
-      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
       <ul class="menu-enlaces">
         <li><a href="index.html" aria-current="page">Inicio</a></li>
         <li><a href="productos.html">Productos</a></li>
@@ -39,12 +39,12 @@
           <a class="boton boton-secundario" href="consejos.html">Leer consejos</a>
         </div>
       </div>
-      <div class="hero-card" aria-label="Plato recomendado">
+      <article class="hero-card" aria-labelledby="hero-card-title">
         <span class="pill">Recomendado hoy</span>
-        <h2>Bowl vegetal saludable</h2>
+        <h2 id="hero-card-title">Bowl vegetal saludable</h2>
         <p>Quinoa, garbanzos, aguacate, verduras y salsa ligera.</p>
         <strong>7,25 €</strong>
-      </div>
+      </article>
     </section>
 
     <section class="bloque bloque-destacado" aria-labelledby="titulo-empresa">
