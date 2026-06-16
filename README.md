@@ -1,22 +1,22 @@
 # Delicias Express · Laboratorio Playwright completo
 
-Este proyecto contiene el **resultado terminado del laboratorio** para que los alumnos puedan ver una solución completa y organizada.
-
-La web es local-first y está incluida en la carpeta `web/`. La suite de pruebas está construida con Playwright y TypeScript.
+Este repositorio contiene una solución completa y estructurada del laboratorio, diseñada para que los alumnos puedan estudiar una implementación realista de una suite E2E moderna.
+La aplicación sigue un enfoque local-first (ubicada en web/) y la automatización está construida con Playwright + TypeScript, aplicando buenas prácticas y patrones de diseño.
 
 ## Qué incluye
 
-- Web local-first de Delicias Express.
-- Tests E2E terminados.
-- Page Object Model.
-- Component Objects.
-- Fixtures propias.
-- Builder para casos de búsqueda.
-- Factory Method para crear páginas y componentes.
-- Decorator para añadir logs y medición sin tocar el Page Object original.
-- AppObject como punto de entrada de alto nivel.
-- Strategy con inyección de dependencias para cambiar la forma de buscar.
-- Tests responsive básicos.
+Aplicación web local-first de Delicias Express.
+Suite de pruebas E2E completamente funcional.
+Implementación de Page Object Model (POM).
+Uso de Component Objects para reutilización.
+Fixtures personalizadas para simplificar tests.
+Builder Pattern para definir casos de prueba expresivos.
+Factory Method para creación de páginas/componentes.
+Decorator Pattern para añadir logging y métricas sin modificar clases base.
+AppObject como capa de alto nivel para flujos de negocio.
+Strategy Pattern + Inyección de Dependencias (DI) para variar comportamientos.
+Tests básicos de responsive design.
+Configuración de ESLint adaptada al proyecto.
 
 ## Instalación
 
@@ -197,3 +197,10 @@ El objetivo es que los alumnos vean que una suite E2E también es software y, po
 
 > Un test que pasa es útil.  
 > Una suite que se entiende, se mantiene y evoluciona es profesional.
+
+## Configuración de ESLint
+El proyecto incluye una configuración adaptada a distintos contextos:
+
+JavaScript de navegador → web/
+TypeScript → tests/
+Reglas específicas de Playwright → solo tests
